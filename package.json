@@ -24,6 +24,7 @@
     "ytdl-core": "^4.11.0"
   },
   "scripts": {
-    "start": "netlify dev"
+    "start": "netlify dev",
+    "test": "node ./functions/api.js"
   }
 }

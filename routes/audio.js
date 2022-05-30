@@ -13,8 +13,8 @@ audio.get("/stream", async (req, res) => {
         let { url } = formats.find(item => item.itag === 251)
         res.status(200).json(url)
     } catch (err) {
-        console.log("Video ID not found")
-        res.status(500).json("Not found")
+        console.log("Error", err)
+        res.status(500).json(err)
     }
 })
 
